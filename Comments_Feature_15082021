@@ -1,0 +1,98 @@
+Reviewd by - Sushil 
+Date- 15 August 2021
+
+WAW-01.feature
+
+As a user of the application
+  we should be able to search our city
+  and temprature
+
+  comment - you are missing So that keyworad (So that is keyword basically follow below format)
+
+  As a .....
+  We should/I want to ....
+  So that ....
+
+
+  comment - Background always run before running each scenario but you have a Then statement where you are already verifying the temperature for the city. 
+  think about flow interm of automation testing or in manual. 
+
+
+ Scenario:Verify that search box accept only valid city name
+    When I enter only a valid city name in the search box               ------- u have already done this in background why are you doing it here again??
+    Then I should see the temprature  ------- u have already done this in background why are you doing it here again??
+
+
+
+ your all the scenario are correct but your background is not sync with scenarios. Keep in mind background always run before running scenario then u should have common stuff in background and seperate actions in scenarios.
+
+
+ -----------------------------------------------------------------------------------------------------------------------------------------------
+
+ WAW-02.feature
+
+wrong .... check for previous comment
+   As a user of the application
+  we should be able to search our city
+  and temprture
+
+scenario outline should always have Examples: (try writing sceanrios in IntelliJIdea). Also you are missing the parameter in the steps where is data like <city name> etc etc. please correct.
+Also your table alignemtn is incorrect (check in IntellijIDEA)
+
+- Wrong Background
+
+
+   Scenario Outline: Verify that user should see city name,date,time,temprature and cloud information on the tile
+    When I enter valid city name
+    Then I should see below information
+
+    city name| date                            | time  | temprature | cloud information
+    Amravati | Monday, 9 August 2021 18:37     | 18:37 | 30 C       | Clouds
+    Munbai   | Wednesday, 11 August 2021 19:37 | 19:37 | 27 C       | Haze
+    Shrinagar| Tuesday, 10 August 2021 19:37   | 19:37 | 30 C       | Clouds
+
+     -----------------------------------------------------------------------------------------------------------------------------------------------
+WAW-03.feature
+
+wrong .... check for previous comment
+   As a user of the application
+  we should be able to search our city
+  and temprture
+
+- Wrong Background
+
+     -----------------------------------------------------------------------------------------------------------------------------------------------
+
+WAW-04.feature
+
+wrong .... check for previous comment
+   As a user of the application
+  we should be able to search our city
+  and temprture
+
+- Wrong Background
+- Wrong scenario outline
+
+
+     -----------------------------------------------------------------------------------------------------------------------------------------------
+
+WAW-05.feature
+
+
+wrong .... check for previous comment
+   As a user of the application
+  we should be able to search our city
+  and temprture
+
+- Wrong Background
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+WAW-06.feature
+
+wrong .... check for previous comment
+   As a user of the application
+  we should be able to search our city
+  and temprture
+
+
+  - Wrong Background
