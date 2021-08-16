@@ -3,7 +3,7 @@ Feature:Application should have search functionality which can search the city t
 
   As a user of the application
   we should be able to search our city
-  and temprature
+  and temprture
 
   Background: pre-requisits
     Given Website is up and running
