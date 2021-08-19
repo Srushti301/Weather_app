@@ -1,16 +1,9 @@
 @WAW-05
-Feature:Temperature information changes according to their unit
+  Feature:Temperature information changes according to their unit
 
   As a user of the application
   we should be able to search our city
-  and temprture
-
-  Background: pre-requisits
-    Given Website is up and running
-    And website is opened in browser
-    When User enter any valid City
-    And click on search button
-    Then user should see the temparature of the city
+  so that we should see temprture
 
   Scenario:Verify In the big tile you see  Temperature Type such as ℃ ℉ K
     When I click on the "view more options" on the home screen
