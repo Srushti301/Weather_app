@@ -3,7 +3,7 @@ Feature:Application should have search functionality which can search the city t
 
   As a user of the application
   we should be able to search our city
-  and temprture
+  so that we should see temprture
 
   Background: pre-requisits
     Given Website is up and running
@@ -28,5 +28,6 @@ Feature:Application should have search functionality which can search the city t
     When I enter valid city name in the search box
     And I press "Enter" key or I click enter button on the screen
     Then I should see Temprature of that city
+
 
   
